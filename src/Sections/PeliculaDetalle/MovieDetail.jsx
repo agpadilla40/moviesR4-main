@@ -9,7 +9,6 @@ export default function MovieDetail(props) {
     
     return (
     <>
-        
         <div className="container">
             <div className="row">
                 <div className="col">

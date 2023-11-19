@@ -14,9 +14,9 @@ export default function Menu() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link to={"/comedia"}>Comedia</Nav.Link>
-                        <Nav.Link to={"/independientes"}>Independientes</Nav.Link>
-                        <Nav.Link to={"/clasicas"}>Clásicas</Nav.Link>
+                        <NavLink to={"/comedia"}>Comedia</NavLink>
+                        <NavLink to={"/independientes"}>Independientes</NavLink>
+                        <NavLink to={"/clasicas"}>Clásicas</NavLink>
 
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

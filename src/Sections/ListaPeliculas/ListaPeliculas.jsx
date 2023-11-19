@@ -12,16 +12,15 @@ export default function ListaPeliculas(props) {
 
     useEffect(() => {
       if (loading) { 
-        fetch("https://api-pelis-back.onrender.com/${props.genero}")
+        fetch(`https://api-pelis-back.onrender.com/${props.genero}`)
         .then(response => response.json())
-        //.then(data => console.log(data))
         .then (data => {
             setPeliculas(data.peliculas);
             setPeliculasFilter(data.peliculas);
             setLoading(false)
         });
       }
-    }, [])          //Aquí puede ponerse el search: cada que se ejecute esta función se lee la API  
+    }, []);          //Aquí puede ponerse el search: cada que se ejecute esta función se lee la API  
 
     const handleSearch = (e) => {
         console.log(e.target.value);
@@ -29,8 +28,8 @@ export default function ListaPeliculas(props) {
             setPeliculasFilter(peliculas)
         } else {
             setSearch(e.target.value) //actualiza el estado del search - guarda lo que escribí 
-            let peliculasFilter = peliculas.filter((peli) => peli.titulo.toLowerCase().includes(search.toLowerCase()))
-            setPeliculasFilter(peliculasFilter)
+            let pelisFilter = peliculas.filter((peli) => peli.titulo.toLowerCase().includes(search.toLowerCase()))
+            setPeliculasFilter(pelisFilter)
         }    
     }
 
@@ -58,9 +57,9 @@ export default function ListaPeliculas(props) {
                         {peliculasFilter.map((item, index) => {
                             return (
                                 <div className="col-3 mt-5 mr-2" key={index}>
-                                    <Link to={`/${item.genero}/${item.titulo}`} state={item}>
-                                        <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} />
-                                    </Link>
+                                    {/* <Link to={`/${item.genero}/${item.titulo}`} state={item}> */}
+                                        <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} item={item}/>
+                                   {/*  </Link> */}
                                 </div>
                             )
                     })}

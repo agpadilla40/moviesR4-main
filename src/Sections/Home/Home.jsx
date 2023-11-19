@@ -7,7 +7,7 @@ export default function Home() {
     <>
         <Menu/> 
         {/* portada - carrucel */}
-        <Portada />
+        {/* <Portada /> */}
         {/* < ListaPeliculas /> */}
         <Outlet/>
         {/* footer */}
