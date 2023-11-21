@@ -1,0 +1,37 @@
+.menuText {
+    color: #273c75 !important;
+    font-size: 25px !important;
+    font-weight: 650;
+    text-align: center;   
+}
+
+.navbar-nav {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #6c5ce7 !important;
+}
+
+.text-colorUno {
+    color: #273c75!important;
+    font-weight: 700 !important;
+    font-style:normal !important; 
+}
+
+.text-colorDos {
+    color: #0097e6 !important;
+    font-weight: 700 !important;
+    font-style:normal !important;
+}
+
+.text-colorTres {
+    color: #3c40c6 !important;
+    font-weight: 700 !important;
+    font-style:normal !important;
+}
+

@@ -2,3 +2,11 @@
     width: 350px;
     height: 500px;
 }
+
+.text-color1 {
+    color: white !important;
+}
+
+.text-color2 {
+    color: rgb(21, 97, 212) !important;
+}

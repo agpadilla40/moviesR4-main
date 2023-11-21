@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <h2 className='text-custom'>Sorry error 404, no enconntré la página</h2>,
+    errorElement: <h2 className='text-custom'>Sorry error 404, page not found</h2>,
     children: [
       {
         path: "/",

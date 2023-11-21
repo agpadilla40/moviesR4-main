@@ -49,7 +49,7 @@ export default function ListaPeliculas(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col d-flex justify-content-center">
-                            <input type="text" placeholder='search' onChange={handleSearch} />
+                            <input type="text" placeholder='search' onChange={handleSearch} className='text-color'/>
                         </div>
                     </div>
                     

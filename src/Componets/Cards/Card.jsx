@@ -41,7 +41,7 @@ export default function CardComponent(props) {
                     
                     <div className='card-play'>
                         <Link to={`/${props.item.genero}/${props.item.titulo}`} state={props.item}>
-                            <button className="btn btn-primary">Play</button>
+                            <button className="btn btn-primary btn-red">Contenido adicional</button>
                         </Link>
                     </div>
 

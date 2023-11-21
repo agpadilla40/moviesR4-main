@@ -29,4 +29,11 @@
     justify-content: space-between;
 }
 
+.btn-red {
+    background-color: red !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+    border-color:#1D1A39 !important;
+    box-shadow: 0 6px 8px -1px rgb(0 0 0 / 0.9), 0 2px 4px -2px rgb(0 0 0 / 0.9) !important;
+}
 
